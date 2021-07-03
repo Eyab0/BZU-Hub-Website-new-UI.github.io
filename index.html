@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://ritaj.birzeit.edu/student/plan/advisory-sheet/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Advisory Plan Sheet</title>
+
+
+    <meta name="Description" content="ritaj.birzeit.edu - Academic and Administrative Portal for Birzeit, the Palestinian University in the West Bank.">
+    <meta name="keywords" content="Ritaj, Palestine, Jerusalem, Alquds, Ramallah, Birzeit, Bir Zeit, University, Israeli Palestinian conflict, Israel, Palistine, Peace Process, Hebron, Bethlehem, International Programme, International Program, Palestinian Legislative Council, PLO, Palestine Liberation Organisation, Palestinian National Authority, Palestinian Authority, PNA, PA, Palestinian, Israelis,  Oslo Agreements, West Bank, Gaza, Gaza Strip, Middle East, Al-Quds, Palestinian Culture, Arab World, Oslo, Al Quds, Palestinian Refugees, Al-Nakba, Edward Said, Naji Ali, Egypt, Jordan, Arabic">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="shortcut icon" href="https://ritaj.birzeit.edu/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/jquery-ui-latest.custom.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/master.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/introjs.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/introjs-rtl.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/master.css" media="all">
+
+    <script src="./Advisory Plan Sheet_files/ac.js.download"></script>
+    <script src="./Advisory Plan Sheet_files/core.js.download"></script>
+    <script src="./Advisory Plan Sheet_files/jquery-latest.min.js.download"></script>
+    <script src="./Advisory Plan Sheet_files/jquery-ui-latest.custom.min.js.download"></script>
+    <script src="./Advisory Plan Sheet_files/intro.min.js.download"></script>
+    <script src="./Advisory Plan Sheet_files/default.js.download"></script>
+    <script src="./Advisory Plan Sheet_files/default2.js.download"></script>
+
+    <script type="text/javascript">
+        var menuList = new Array();
+        menuList[menuList.length] = {
+            label: 'Academic - أكاديمي',
+            value: 'javascript:undefined'
+        };
+        menuList[menuList.length] = {
+            label: 'Course Schedule - البرنامج الفصلي',
+            value: '/student/schedule'
+        };
+        menuList[menuList.length] = {
+            label: 'My Final Exam Schedule - برنامج الإمتحانات النهائي',
+            value: '/student/final-schedule'
+        };
+        menuList[menuList.length] = {
+            label: 'Course Browser - مستعرض المساقات',
+            value: '/hemis/bu/hierarchy?mode=CB'
+        };
+        menuList[menuList.length] = {
+            label: 'W Request - طلب الإنسحاب من مساق (W)',
+            value: '/student/withdraw/'
+        };
+        menuList[menuList.length] = {
+            label: 'Final Exams Schedule - Second Semester 2020/2021 - برنامج الإمتحانات النهائية -الفصل الثاني 2020/2021',
+            value: '/hemis-admin/final-exam/all-exams?term_id=1202'
+        };
+        menuList[menuList.length] = {
+            label: 'Academic Applications - Specalization &amp; Transfer - الطلبات الأكاديمية - التحويل والتخصص',
+            value: '/acap/application'
+        };
+        menuList[menuList.length] = {
+            label: 'Education Diploma Program Application - طلب دبلوم تربية',
+            value: '/student/forms/minor-diploma/'
+        };
+        menuList[menuList.length] = {
+            label: 'Claiming Minor - التسجيل لتخصص فرعي',
+            value: '/student/forms/minor-diploma/minor/'
+        };
+        menuList[menuList.length] = {
+            label: 'Academic Research Proposals - مشاريع الأبحاث الأكاديمية',
+            value: '/instructor/proposals/list'
+        };
+        menuList[menuList.length] = {
+            label: 'Academic Mobility - Academic Mobility',
+            value: '/be1/en/academic/mobility'
+        };
+        menuList[menuList.length] = {
+            label: 'Devices Reservation Requests - طلبات حجز الأجهزة',
+            value: '/be1/en/student/devices-reservation'
+        };
+        menuList[menuList.length] = {
+            label: 'Financial - مالي',
+            value: 'javascript:undefined'
+        };
+        menuList[menuList.length] = {
+            label: 'Siblings Scholarship - منحة الأخوة',
+            value: '/student/scholarships/list-brother-scholarship'
+        };
+        menuList[menuList.length] = {
+            label: 'Administration - إداري',
+            value: 'javascript:undefined'
+        };
+        menuList[menuList.length] = {
+            label: 'Faculty Transfer Conditions - شروط التحويل بين الكليات',
+            value: '/acap/transfer-conditions/list'
+        };
+        menuList[menuList.length] = {
+            label: 'Work and Break Time Schedule for Departments - مواعيد دوام واستراحة الدوائر في الجامعة',
+            value: '/dept-schedule/'
+        };
+        menuList[menuList.length] = {
+            label: 'Midterm Exams Schedule - Second Semester 2020/2021 - برنامج الإمتحانات النصفية - الفصل الثاني 2021/2020',
+            value: '/hemis-admin/final-exam/midterm-exams'
+        };
+        menuList[menuList.length] = {
+            label: 'Complaints and Suggestions - شكاوى واقتراحات',
+            value: '/suggestions/'
+        };
+        menuList[menuList.length] = {
+            label: 'Personal Profile - الملف الشخصي',
+            value: 'javascript:undefined'
+        };
+        menuList[menuList.length] = {
+            label: 'My Contact Information - معلومات الإتصال',
+            value: '/person-maintained/contact-info'
+        };
+        menuList[menuList.length] = {
+            label: 'Library Books - الاستعارة من المكتبة',
+            value: '/library/user-docs-status'
+        };
+        menuList[menuList.length] = {
+            label: 'User Settings - الإعدادات الشخصية',
+            value: '/users/'
+        };
+        menuList[menuList.length] = {
+            label: 'Assign Appointments - حجز المواعيد (الساعات المكتبية،العيادات...)',
+            value: '/appointments/'
+        };
+        menuList[menuList.length] = {
+            label: 'Eduroam network - Eduroam شبكة',
+            value: '/be1/application/network-access/list-edu-roam-devices'
+        };
+        menuList[menuList.length] = {
+            label: 'Services Requests - طلبات الدعم',
+            value: 'javascript:undefined'
+        };
+        menuList[menuList.length] = {
+            label: 'Drug Information Center - مركز المعلومات الدوائية',
+            value: '/be1/medical/d-i-c/'
+        };
+        menuList[menuList.length] = {
+            label: 'Student Menu - قائمة الطلبة',
+            value: 'javascript:undefined'
+        };
+        menuList[menuList.length] = {
+            label: 'Academic Record - السجل الأكاديمي',
+            value: '/student/marks/term-summary'
+        };
+        menuList[menuList.length] = {
+            label: 'Financial Record - السجل المالي',
+            value: '/student/fin-balance'
+        };
+        menuList[menuList.length] = {
+            label: 'Published Grades (1 st, HW, ..) - علامات الفصل (الإمتحان الأول، الثاني، ...)',
+            value: '/student/marks/grades-sheet'
+        };
+        menuList[menuList.length] = {
+            label: 'Community Work Record - سجل العمل التعاوني',
+            value: '/student/comm-work'
+        };
+        menuList[menuList.length] = {
+            label: 'Academic Messages - الرسائل الأكاديمية',
+            value: '/student/academic-msgs/'
+        };
+        menuList[menuList.length] = {
+            label: 'Student Plan - خطة الطالب',
+            value: '/student/plan/'
+        };
+        menuList[menuList.length] = {
+            label: 'Registration of Community Work - تسجيل لعمل تعاوني',
+            value: '/hemis/community-work/work-apply-form'
+        };
+        menuList[menuList.length] = {
+            label: 'Exchange of academic books - تبادل الكتب الجامعية',
+            value: '/student/books/'
+        };
+        menuList[menuList.length] = {
+            label: 'Authorization System - نظام التخويل',
+            value: '/student/authorizations/'
+        };
+        menuList[menuList.length] = {
+            label: 'Advisory Plan Sheet - الخطة الإرشادية للتخصص',
+            value: '/student/plan/advisory-sheet/'
+        };
+        menuList[menuList.length] = {
+            label: 'Scholarship Application - طلب منحة دراسية',
+            value: '/be1/financial/student-aid/list-student-applications'
+        };
+        menuList[menuList.length] = {
+            label: 'Student Employment - العمل الطلابي مدفوع الأجر',
+            value: '/student/paid-work/student'
+        };
+        menuList[menuList.length] = {
+            label: 'Hour Exams Dates - تواريخ الإمتحانات الشهرية',
+            value: '/student/hour-exams'
+        };
+        menuList[menuList.length] = {
+            label: 'Masari Certificate - شهادة مساري',
+            value: '/be1/student/marks/masari-certificate'
+        };
+        menuList[menuList.length] = {
+            label: 'Management Tasks - مهام إدارية',
+            value: 'javascript:undefined'
+        };
+        menuList[menuList.length] = {
+            label: 'Recommendation Requests - طلب توصية',
+            value: '/student/forms/recommendation'
+        };
+        menuList[menuList.length] = {
+            label: 'Administrative Positions for Academic Year 2018/2019 - المناصب الإدارية للعام 2018/2019',
+            value: '/official-positions/'
+        };
+        menuList[menuList.length] = {
+            label: 'University Library - مكتبة الجامعة',
+            value: '/library/'
+        };
+        menuList[menuList.length] = {
+            label: 'University Laws and Regulations - قوانين وأنظمة الجامعة',
+            value: '/university-laws/?root_node_id=100'
+        };
+        menuList[menuList.length] = {
+            label: 'Health Insurance Instructions - تعليمات التأمين الصحي',
+            value: '/hrm/forms/forms/insurance-instructions-2018.pdf'
+        };
+        menuList[menuList.length] = {
+            label: 'Solidarity Fund Instructions - تعليمات صندوق التضامن',
+            value: '/hrm/forms/forms/solidarity/Solidarity_Fund_instructions'
+        };
+        menuList[menuList.length] = {
+            label: 'Administrative Manual - الدليل الإداري',
+            value: '/hrm/forms/forms/?file=admin-manual'
+        };
+        menuList[menuList.length] = {
+            label: 'Cafeteria Prices - أسعار البيع في كافتريات الجامعة',
+            value: '/cafeteria/2016/'
+        };
+        menuList[menuList.length] = {
+            label: 'Hospitalities Prices in Central Cafeteria - اسعار الضيافات في الكافتريا المركزية',
+            value: '/cafeteria/cafteria-official-prices'
+        };
+        menuList[menuList.length] = {
+            label: 'Health Insurance List - الأطباء والمراكز المعتمدين في التأمين الصحي',
+            value: '/hrm/forms/forms/health-insurance-list-2018.pdf'
+        };
+    </script>
+
+    <script language="JavaScript">
+        var loggedIn = true;
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/ac.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./Advisory Plan Sheet_files/asm.css" media="all">
+
+</head>
+
+<body dir="rtl" class="rtl" style="">
+
+    <div id="slave" style="clear:both;" data-step="3" data-intro="روابط وصفحات الصناديق الرئيسية">
+        <h2 align="center">
+            هندسة الحاسوب<br>
+            <b>Computer Engineering</b><br>
+            <font color="red">158 مجموع الساعات</font>
+        </h2>
+        <table cellspacing="3" cellpadding="8" align="center" width="95%" dir="rtl">
+
+            <tbody>
+                <tr valign="center">
+
+                    <td bgcolor="#5FD5FF" class="wbr b nv" width="10%">السنة الدراسية</td>
+                    <td bgcolor="#5FD5FF" class="wbr b nv" align="center" width="35">الفصل الاول</td>
+                    <td bgcolor="#5FD5FF" class="wbr b nv" align="center" width="35%">الفصل الثاني</td>
+
+                    <td bgcolor="#5FD5FF" class="wbr b nv" align="center" width="20%">الفصل الصيفي</td>
+
+
+                </tr>
+
+                <tr valign="center">
+                    <td bgcolor="#5FD5FF" class="wbr b nv" width="10%">
+
+                        السنة الأولى
+                        <br>
+                        <font color="red"> 33 ساعة</font>
+
+                    </td>
+
+
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV" style="
+    color: gray;
+">
+                                                    <td class="gc nv">
+
+                                                        ARAB135 : مهارات اللغة العربية 1
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2201 : لغة انجليزية مستوى متوسط 3
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2201 : لغة انجليزية مستوى متوسط 3
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENME120 : مشغل
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        MATH1411 : التفاضل والتكامل 1
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">4</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        PHYS111 : مختبر الفيزياء العامة 1
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        PHYS141 : الفيزياء العامة 1
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">4</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">18</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ARAB136 : مهارات اللغة العربية 2
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        COMP133 : الحاسوب والبرمجة
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2202 : لغة انجليزية مستوى متوسط 4
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2202 : لغة انجليزية مستوى متوسط 4
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENME121 : الرسم الهندسى
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        MATH1321 : التفاضل والتكامل 2
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        PHYS112 : مختبر الفيزياء العامة 2
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        PHYS132 : الفيزياء العامة 2
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">19</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+
+                    <td class="wbr b nv" align="center" width="20%">
+
+                        &nbsp;
+
+                    </td>
+
+                </tr>
+
+                <tr valign="center">
+                    <td bgcolor="#5FD5FF" class="wbr b nv" width="10%">
+
+                        السنة الثانية
+                        <br>
+                        <font color="red"> 33 ساعة</font>
+
+                    </td>
+
+
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        COMP2310
+                                        : 
+                                        البرمجة الشيئية
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        COMP233
+                                        : 
+                                        الرياضيات المنفصلة
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        ENCS2340
+                                        : 
+                                        أنظمة رقمية
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        ENEE2307
+                                        : 
+                                        الاحتمالات والإحصاء الهندسي
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2203 : لغة انجليزية مستوى متقدم 1
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2203 : لغة انجليزية مستوى متقدم 1
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        MATH331
+                                        : 
+                                        المعادلات التفاضلية العادية
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">19</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        COMP2421
+                                        : 
+                                        بنية المعلومات والخوارزميات
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">4</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        ENCS2110
+                                        : 
+                                        مختبر الإلكترونيات الرقمية وتنظيم الحاسوب
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        ENCS2380
+                                        : 
+                                        تنظيم الحاسوب والمعالج الدقيق
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        ENEE2304
+                                        : 
+                                        تحليل الدوائر الكهربائية
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv"><a href="https://www.youtube.com/channel/UC8PSRy1_Sr2RU23YWdIkWSA">
+    									 
+                                        ENEE2312
+                                        : 
+                                        الإشارات والأنظمة
+                                    
+    								</a></td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2204 : لغة انجليزية مستوى متقدم 2
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTWV">
+                                                    <td class="gc nv">
+
+                                                        ENGC2204 : لغة انجليزية مستوى متقدم 2
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">18</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+
+                    <td class="wbr b nv" align="center" width="20%">
+
+                        &nbsp;
+
+                    </td>
+
+                </tr>
+
+                <tr valign="center">
+                    <td bgcolor="#5FD5FF" class="wbr b nv" width="10%">
+
+                        السنة الثالثة
+                        <br>
+                        <font color="red"> 34 ساعة</font>
+
+                    </td>
+
+
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS3130 : مختبر لينوكس
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS3310 : تصميم الأنظمة الرقمية المتقدمة
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS3390 : نظم التشغيل
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS4110 : مختبر تطبيقات الحاسوب
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENEE2360 : الإلكترونيات التمثيلية
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENEE3309 : أنظمة الاتصالات
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        MATH234 : مقدمة في الجبر الخطي
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">17</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        BUSA2302 : إدارة المشاريع الهندسية
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS3320 : شبكات الحاسوب
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS3330 : الدوائر الرقمية المتكاملة
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS3340 : الذكاء الاصطناعي
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS4370 : عمارة الحاسبات
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENEE2103 : مختبر الدوائر والإلكترونيات
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENEE4113 : مختبر الاتصالات
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">17</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+
+                    <td class="wbr b nv" align="center" width="20%">
+
+                        &nbsp;
+
+                    </td>
+
+                </tr>
+
+                <tr valign="center">
+                    <td bgcolor="#5FD5FF" class="wbr b nv" width="10%">
+
+                        السنة الرابعة
+                        <br>
+                        <font color="red"> 33 ساعة</font>
+
+                    </td>
+
+
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        COMP333 : إدارة قواعد البيانات
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="RTN">
+
+                                                        ENCS4130 : مختبر شبكات الحاسوب
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS4210 : أخلاقيات هندسة الحاسوب
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS4310 : معالجة الإشارات الرقمية
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS4320 : التشفير التطبيقي
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS4380 : أساليب المواءمة
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">15</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        COMP433 : الهندسة البرمجية
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS4330 : تطبيقات الزمن الحقيقي والأنظمة المقحمة
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري تخصص
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري تخصص
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري جامعة
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">15</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+
+                    <td class="wbr b nv" align="center" width="20%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb"><br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+
+                </tr>
+
+                <tr valign="center">
+                    <td bgcolor="#5FD5FF" class="wbr b nv" width="10%">
+
+                        السنة الخامسة
+                        <br>
+                        <font color="red"> 25 ساعة</font>
+
+                    </td>
+
+
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS5140 : مختبر نظم الزمن وأساليب المواءمة الحقيقي
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS5200 : مقدمة مشروع التخرج
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        مساق اختياري
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري تخصص
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري جامعة
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري تخصص
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">15</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+                    <td class="wbr b nv" align="center" width="35%">
+
+                        <p>
+                        </p>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" align="center" class="wb">
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+
+                                            <tbody>
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">عنوان المساق</td>
+                                                    <td align="center" class="gc b nv">عدد الساعات</td>
+
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS5150 : مختبر متقدم في هندسة انظمة الحاسوب
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RTN">
+                                                    <td class="gc nv">
+
+                                                        ENCS5300 : مشروع التخرج
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري تخصص
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">1</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        مساق اختياري
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">2</td>
+                                                </tr>
+
+                                                <tr valign="top" class="RT">
+                                                    <td class="gc nv">
+
+
+
+                                                        اختياري تخصص
+
+                                                    </td>
+                                                    <td class="gc nv" align="center">3</td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td align="center" class="gc b nv">مجموع الساعات</td>
+                                                    <td align="center" class="gc b nv">10</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+
+                    </td>
+
+                    <td class="wbr b nv" align="center" width="20%">
+
+                        &nbsp;
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!-- Content Content End -->
+    </div>
+
+    <div class="footer_container">
+        <div dir="rtl">
+            <div style="float: right; padding: 2px 10px; line-height: 20px;"><br></div>
+        </div>
+    </div>
+
+
+    <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul>
+    <style>
+        th,
+        .alc {
+            text-align: center;
+        }
+        
+        .gc {
+            border: 1px solid #d9d9d9;
+        }
+        
+        .schd {
+            font-family: verdana, sanserif;
+            font-size: 0.8em;
+        }
+    </style>
+</body>
+
+</html>

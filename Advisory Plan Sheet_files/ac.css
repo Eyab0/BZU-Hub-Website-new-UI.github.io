@@ -1,0 +1,36 @@
+
+.ac_menu
+{
+        border:1px solid black
+}
+.ac_normal
+{
+	background-color:#ffffff;
+        cursor:pointer;
+}
+.ac_highlight
+{
+        background-color:#3366cc;
+	color:white;
+        cursor:pointer;
+}
+.ac_normal .a
+{
+        font-size:13px;
+        color:black;
+}
+.ac_highlight .a
+{
+	font-size:13px;
+}
+.ac_normal .d
+{
+	float:right;
+        font-size:10px;
+        color:green;
+}
+.ac_highlight .d
+{
+	float:right;
+        font-size:10px;
+}

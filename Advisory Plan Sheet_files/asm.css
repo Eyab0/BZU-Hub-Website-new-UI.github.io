@@ -1,0 +1,27 @@
+.fin { color:#00BF1A; }
+.nfin { color:red; }
+.grc { color: blue !important; }
+.external td { background-color: #FFF4BF; }
+.failed td { color: red ! important; }
+.RTN td { color: green; }
+.RTEX td { color: #075A7F; }
+.RTGE td { color: blue; }
+.RTSE td { color: #773FFF; }
+.RTEE td { color: #A10CCF; }
+.RTCS td { color: #1BA7DF; }
+.RTWV td { color: #FFB3D9; }
+.ff_1 { color: green; }
+.ff_0 { color: red; }
+.disabled td { color: #cdcdcd ! important; }
+.current td { color: #AB00FF ! important; }
+.gclo td {
+	border: 1px solid #676767;
+	text-align:center;
+}
+.taken td { font-weight:bold;}
+.allowed td {	color:#00aa00; }
+.norepeat td { color:#000000; }
+.prerreqs td { color:#ff0000; }
+.failed td { color:#cc00ff; }
+.bolcked td { color:#ff8800; }
+.notoffered td { color:#656565; }
